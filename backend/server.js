@@ -16,15 +16,15 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+  origin: process.env.CLIENT_URL || "http://localhost:5173",
+  credentials: true
 }));
+
+// DELETE the app.options line - it's not needed and breaks Express 5
 
 // Connect to database
 connectDB();
 
-// Body parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
