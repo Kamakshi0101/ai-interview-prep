@@ -1,12 +1,18 @@
 import axios from 'axios'
 
+// const axiosInstance = axios.create({
+//   baseURL: import.meta.env.VITE_API_URL ,
+//   timeout: 30000,
+//   headers: {
+//     'Content-Type': 'application/json'
+//   }
+// })
+
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api',
-  timeout: 30000,
-  headers: {
-    'Content-Type': 'application/json'
-  }
-})
+  baseURL: '',        // ← empty, apiPath.js now has full paths
+  withCredentials: true,
+  timeout: 10000,
+});
 
 // Request interceptor - Add auth token
 axiosInstance.interceptors.request.use(
