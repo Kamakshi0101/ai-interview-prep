@@ -1,8 +1,8 @@
-# 🎯 AI Interview Prep Platform
+#  AI Interview Prep Platform
 
 A full-stack MERN application that helps users prepare for technical interviews using AI-powered question generation and concept explanations. The platform generates custom interview questions based on job roles, experience levels, and focus areas, providing an interactive learning experience with features like pinning important questions, adding personal notes, and generating AI explanations.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
@@ -14,14 +14,14 @@ A full-stack MERN application that helps users prepare for technical interviews 
 - [Usage Guide](#-usage-guide)
 - [Screenshots](#-screenshots)
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication & User Management
+###  Authentication & User Management
 - **Secure Authentication**: JWT-based authentication with 7-day token expiration
 - **Profile Management**: Upload and update profile photos via Cloudinary
 - **Password Security**: bcrypt password hashing for secure storage
 
-### 📚 Interview Session Management
+###  Interview Session Management
 - **Create Sessions**: Generate custom interview sessions based on:
   - Job role (e.g., Full Stack Developer, DevOps Engineer)
   - Experience level (Entry, Mid, Senior, Lead)
@@ -32,7 +32,7 @@ A full-stack MERN application that helps users prepare for technical interviews 
 - **Session Dashboard**: View all sessions with statistics and quick access
 - **Delete Sessions**: Remove unwanted sessions with confirmation
 
-### 🎓 Interactive Question Review
+###  Interactive Question Review
 - **Expandable Q&A Cards**: Show/hide answers with smooth animations
 - **Pin to Top**: Keep important questions at the top of your list
 - **Personal Notes**: Add and edit notes for each question
@@ -41,7 +41,7 @@ A full-stack MERN application that helps users prepare for technical interviews 
 - **Difficulty Badges**: Visual indicators for question difficulty levels
 - **Tag System**: Categorize questions by topics
 
-### 🎨 User Interface
+###  User Interface
 - **Modern Design**: Clean, responsive UI built with Tailwind CSS
 - **Animated Backgrounds**: Gradient blob animations for visual appeal
 - **Toast Notifications**: Real-time feedback using react-hot-toast
@@ -49,7 +49,7 @@ A full-stack MERN application that helps users prepare for technical interviews 
 - **Empty States**: Helpful prompts when no data is available
 - **Markdown Support**: Rich text rendering with syntax highlighting
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **React 19.2.0**: Latest React with modern hooks and concurrent features
@@ -73,7 +73,7 @@ A full-stack MERN application that helps users prepare for technical interviews 
 - **Multer 2.0.2**: File upload middleware
 - **CORS**: Cross-origin resource sharing
 
-## 🏗 Architecture
+##  Architecture
 
 ### Design Pattern
 The application follows a **clean architecture** with clear separation of concerns:
